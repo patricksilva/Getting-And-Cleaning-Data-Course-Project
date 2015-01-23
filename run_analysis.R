@@ -1,4 +1,4 @@
-  input.files <- c("UCI HAR Dataset/activity_labels.txt",      #1
+  inputFiles <- c("UCI HAR Dataset/activity_labels.txt",      #1
                    "UCI HAR Dataset/features.txt",             #2
                    "UCI HAR Dataset/test/subject_test.txt",    #3
                    "UCI HAR Dataset/test/X_test.txt",          #4
@@ -7,15 +7,15 @@
                    "UCI HAR Dataset/train/X_train.txt",        #7
                    "UCI HAR Dataset/train/y_train.txt")        #8
   # reading files
-  activityLabels <- read.table(input.files[1], stringsAsFactors = FALSE, 
+  activityLabels <- read.table(inputFiles[1], stringsAsFactors = FALSE, 
                                col.names = c("id", "activity"))
-  features <- read.table(input.files[2], stringsAsFactors = FALSE)
-  subjectTest <- read.table(input.files[3])
-  subjectTrain <- read.table(input.files[6])
-  activityTest <- read.table(input.files[5])
-  activityTrain <- read.table(input.files[8])
-  xTest <- read.table(input.files[4])
-  xTrain <- read.table(input.files[7])
+  features <- read.table(inputFiles[2], stringsAsFactors = FALSE)
+  subjectTest <- read.table(inputFiles[3])
+  subjectTrain <- read.table(inputFiles[6])
+  activityTest <- read.table(inputFiles[5])
+  activityTrain <- read.table(inputFiles[8])
+  xTest <- read.table(inputFiles[4])
+  xTrain <- read.table(inputFiles[7])
   # creating raw table
   rawData <- rbind(
                cbind(activityTest, subjectTest, xTest),

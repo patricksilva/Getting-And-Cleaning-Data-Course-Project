@@ -1,6 +1,6 @@
 # Getting And Cleaning Data - Course Project
 
-## Introduction
+## General information
 
 This repo contains my course project to [Coursera](www.coursera.org) 
 [“Getting and Cleaning Data”](https://www.coursera.org/course/getdata) course, part of the 
@@ -12,6 +12,10 @@ only the measurements on the mean and standard deviation for each measurement fr
 the table containing average of selected variables for each activity and each subject.
 
 This script uses only {base} and {stats} packages, which are installed by default with R, so you don't need to install any packages.
+
+__IMPORTANT!__ If your environment contains variables called `inputFiles`, `activityLabels`, `features`, `subjectTest`, 
+`subjectTrain`, `activityTest`, `activityTrain`, `xTest`, `xTrain`, `rawData` or `tidyData`, then after script execution 
+they will be removed.
 
 For more information about the initial and the final data read CodeBook.md.
 

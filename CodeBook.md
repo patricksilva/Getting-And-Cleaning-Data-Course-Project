@@ -90,8 +90,8 @@ Final data set were created from the intermediate data set by averaging extracte
 
 ## Tidy Data Set
 
-Final data set is a table with 180 rows - one for every combination of six activities and thirty subjects - and 68 columns - 2 
-for activity name and subject id number and 66 for extracted variables - and contains the average values of each variable
+Final data set is a table with 180 rows (one for every combination of six activities and thirty subjects) and 68 columns (2 
+for activity name and subject id number and 66 for extracted variables) and contains the average values of each variable
 for each activity and each subject.
 
 Final variables are ("XYZ" is used to denote 3-axial signals in the X, Y and Z directions):
